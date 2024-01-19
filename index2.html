@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-icons{
+            font-size: 0.7em;
+            padding: 20px 0;
+        }
+        .main-icons img{
+            background-color: rgb(243, 237, 237);
+        }
+        .main-icons-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .main-icons .main-icons-list{
+            list-style-type: none;
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            padding-left: 0 !important;
+        }
+        .main-icons-list{
+            margin-left: 100px;
+           
+        }
+        .main-icons-dropdown li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-icons .main-icons-details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .main-icons .main-icons-details:hover{
+            background-color: rgb(235, 226, 226);
+        }
+        .main-icons-dropdown li:hover .wick{
+            height: 20px;
+            width: 1px;
+            background-color: red;
+        }
+        .main-icons-dropdown li:hover .base-line{
+            padding-left: 30px;
+            height: 1px;
+            width: 50px;
+            background-color: red;
+            /* margin: auto;  */
+            transform: scaleX(20) ;
+            transition-duration: 1s;
+        }
+        #base-line2{
+            transform: scaleX(12) ;
+        }
+        #base-line3{
+            transform: scaleX(15) ;
+        }
+        #base-line4{ 
+            padding-right:10px;
+            transform: scaleX(10) ;
+        }
+        .main-icons-dropdown-content {
+            display: none;
+            top: 120px;
+            position: absolute;
+            z-index: 1;
+        }
+        .main-icons-dropdown-content ul{
+            display: flex; 
+            list-style-type: none;
+            gap: 8em;
+        }
+
+        .main-icons-dropdown:hover .main-icons-dropdown-content {
+            display: flex; 
+        }
+    </style>
+</head>
+<body>
+    <div class="main-icons">
+        <ul class="main-icons-list">
+            <div class="main-icons-dropdown">
+                <li>
+                    <div class="main-icons-details">
+                        <img src="./images/ways-to-bank-1.png" alt="" width="55px">
+                        <div>
+                            WAYS TO BANK
+                        </div>
+                    </div>
+                    
+                    <div class="wick"></div>
+                    <div class="base-line"></div>
+                </li>
+                <div class="main-icons-dropdown-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./images/debit-and-credit-cards.png" alt="" width="50px">
+                            </div>
+                            <div>ATM</div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/ways-to-bank.png" alt="" width="50px">
+                            </div>
+                            <div>
+                                BRANCH
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/mobile.png" alt="" width="50px"></div>
+                            <div>
+                                MOBILE
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/online-1.png" alt="" width="50px" ></div>
+                            <div>ONLINE</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+            <div class="main-icons-dropdown">
+                <li>
+                    <div class="main-icons-details">
+                        <img src="./images/products-n-services-2.png" alt="" width="55px">
+                        <div>
+                            PROMOS PRODUCT & <br> SERVICES
+                        </div>
+                    </div>
+                    <div class="wick"></div>
+                    <div class="base-line" id="base-line2"></div>
+                </li>
+                <div class="main-icons-dropdown-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./images/promo-zenith-icons-300x300_thumb.png" alt="" width="50px">
+                            </div>
+                            <div>PROMO</div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/loans-zenith-icons-300x300.png" alt="" width="50px">
+                            </div>
+                            <div>
+                                LOANS
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/debit-and-credit-cards.png" alt="" width="50px"></div>
+                            <div>
+                                CARDS
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/private-banking.png" alt="" width="50px" ></div>
+                            <div>PRIVATE BANKING</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+            <div class="main-icons-dropdown">
+                <li>
+                    <div class="main-icons-details">
+                        <img src="./images/open-account-alt_zenith-icons-300x300.png" alt="" width="55px">
+                        <div>
+                            OPEN AN ACCOUNT
+                        </div>
+                    </div>
+                    <div class="wick"></div>
+                    <div class="base-line" id="base-line3"></div>
+                </li>
+                <div class="main-icons-dropdown-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./images/current-account-zenith-icons-150x150.png" alt="" width="50px">
+                            </div>
+                            <div>CURRENT ACCOUNT</div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/savings-account-zenith-icons-150x150.png" alt="" width="50px">
+                            </div>
+                            <div>
+                                SAVINGS ACCOUNT
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/savings-account-zenith-icons-150x150.png" alt="" width="50px"></div>
+                            <div>
+                                SALARY ACCOUNT
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/domciliary-account-zenith-icons-300x300.png" alt="" width="50px" ></div>
+                            <div>DOMICILIARY ACCOUNT</div>
+                        </li>
+                        <!-- <li>
+                            <div><img src="./images/diaspora-account-zenith-icons-150x150.png" alt="" width="50px" ></div>
+                            <div>DIASPORA ACCOUNT</div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>   
+            <div class="main-icons-dropdown">
+                <li>
+                    <div class="main-icons-details">
+                        <img src="./images/customer-support-4.png" alt="" width="55px">
+                        <div>
+                            CUSTOMER SERVICE
+                        </div>
+                    </div>
+                    <div class="wick"></div>
+                    <div class="base-line" id="base-line4"></div>
+                </li>
+                <div class="main-icons-dropdown-content">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./images/customer-support-4.png" alt="" width="50px">
+                            </div>
+                            <div>SELF SERVICE</div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/feedback.png" alt="" width="50px">
+                            </div>
+                            <div>
+                                FEEDBACK
+                            </div>
+                        </li>
+                        <li>
+                            <div><img src="./images/complaintsenquiry.png" alt="" width="50px"></div>
+                            <div>
+                                ENQUIRIES
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+            <div class="main-icons-dropdown">
+                <li>
+                    <div class="sec-list-details">
+                        <img src="./images/zenith-community-icon-300x300.png" alt="" width="55px">
+                        <div>
+                            MY ASPIREHUB
+                        </div>
+                    </div>
+                    
+                </li>
+            </div>    
+        </ul>
+       
+    </div>    
+    </body>
+    </div>
+    
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*.......... CAROUSEL......... */
+#container-grid1{
+    width: 150px;
+}
+.section-one{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    /* margin-bottom: 30px; */
+    padding-bottom: 30px;
+    
+}
+/*........... ICON_LIST......... */
+.icon-section-list ul{
+    display: flex;
+    list-style-type: none;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 0 !important;
+    text-align: center;
+    font-size: 0.7em;
+   
+}
+.icon-section-list ul li{
+    padding: 20px 30px;
+}
+.icon-section-list img{
+    width: 60px;
+    background-color: rgb(243, 237, 237);
+}
+.icon-section-list ul li:hover{
+    background-color: #e3e8ec;
+}
+/* ...............MEDIA_CARDS............ */
+#media-card2{
+    background-image: url(./images/video.jpg);
+}
+#media-card3{
+    background-image: url(./images/audio.jpg);
+}
+#media-card4{
+    background-image: url(./images/gallery.jpg);
+}
+#media-card5{
+    background-image: url(./images/documents.jpg);
+}
+#media-card6{
+    background-image: url(./images/zenith-community.jpg);
+}
+.media-card{
+    background-image: url(./images/zenith-news-zenith-image-section-4\ \(1\).jpg);
+    width: 500px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.media-card-item{
+    color: white;
+    width: 370px;
+}
+.media-card-item button{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+}
+.media-card-item button a{
+    text-decoration: none;
+    color: white;
+}
+/* ................MEDIA_QUERY................. */
+@media (max-width: 991px) {
+    .icon-section-list{
+        display: none;
+    }
+}
+@media (max-width: 860px) {
+    .media-card-item{
+        width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .section-one{
+        flex-direction: column;
+    }
+    .media-card{
+        width: 95%;
+        margin: auto;
+        padding-left: 80px;
+    }
+    .media-card-item{
+        width: 420px;
+    }
+    .corporate-carousel{
+        display: none;
+    }
+}
+@media (max-width: 670px) {
+    .media-card-item{
+        width: 390px;
+    }
+    .media-card{
+        padding-left: 40px;
+    }
+}
+@media (max-width: 538px) {
+    .media-card-item{
+        width: 340px;
+    }
+    .media-card{
+        height: 400px;
+    }
+}
+@media (max-width: 462px) {
+    .media-card-item{
+        width: 270px;
+    }
+}
+@media (max-width: 390px) {
+    .media-card-item{
+        width: 230px;
+    }
+    .media-card{
+        padding-left: 20px;
+    }
+}
